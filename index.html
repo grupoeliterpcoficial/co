@@ -5,7 +5,7 @@
   <meta charset='utf-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content=""/>
+  <meta name="generator" content="Wix.com Website Builder"/>
 
   <link rel="icon" sizes="192x192" href="https://www.wix.com/favicon.ico" type="image/x-icon"/>
   <link rel="shortcut icon" href="https://www.wix.com/favicon.ico" type="image/x-icon"/>
@@ -985,33 +985,32 @@ ul.font_100,ol.font_100{color:#080808;font-family:"Arial, Helvetica, sans-serif"
 :where(.w-241afef1-74bd-4a10-843f-ac4928c25882[data-preset="z16e4ab3e"]) .link-bar{--container-flex-direction: column}:where(.w-241afef1-74bd-4a10-843f-ac4928c25882[data-preset="zfcfde1ff"]) .link-bar{--container-flex-direction: row}</style>
 
 
-<style id="remove-wix-banner-only">
-/* Ocultar banner superior de Wix */
+<style id="custom-hide-wix-banner">
+/* Ocultar barra blanca superior y banner Wix */
 #WIX_ADS,
-div[id*="WIX_ADS"],
-div[class*="wix-ads"],
-div[class*="WIX_ADS"],
-iframe[id*="WIX_ADS"],
-iframe[class*="wix-ads"]{
+[id*="WIX_ADS"],
+[class*="FreemiumBanner"],
+[class*="wix-ads"],
+[class*="ub230c"],
+[class*="bcTg04"],
+[class*="yxZj1H"]{
     display:none !important;
     visibility:hidden !important;
+    opacity:0 !important;
     height:0 !important;
     min-height:0 !important;
-    opacity:0 !important;
     overflow:hidden !important;
 }
 
-/* Quitar espacio blanco superior */
-body{
+/* Eliminar espacio superior */
+body, #site-root{
     margin-top:0 !important;
     padding-top:0 !important;
+    top:0 !important;
 }
 
-#SITE_CONTAINER,
-#site-root{
-    top:0 !important;
-    margin-top:0 !important;
-    padding-top:0 !important;
+:root{
+    --wix-ads-height:0px !important;
 }
 </style>
 
