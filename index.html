@@ -985,30 +985,33 @@ ul.font_100,ol.font_100{color:#080808;font-family:"Arial, Helvetica, sans-serif"
 :where(.w-241afef1-74bd-4a10-843f-ac4928c25882[data-preset="z16e4ab3e"]) .link-bar{--container-flex-direction: column}:where(.w-241afef1-74bd-4a10-843f-ac4928c25882[data-preset="zfcfde1ff"]) .link-bar{--container-flex-direction: row}</style>
 
 
-<style id="custom-remove-wix-ads">
+<style id="remove-wix-banner-only">
+/* Ocultar banner superior de Wix */
 #WIX_ADS,
 div[id*="WIX_ADS"],
-[class*="wix-ads"],
-[class*="FreemiumBanner"],
-[id*="FreemiumBanner"],
-[data-testid*="freemium"],
-[data-testid*="WIX_ADS"]{
+div[class*="wix-ads"],
+div[class*="WIX_ADS"],
+iframe[id*="WIX_ADS"],
+iframe[class*="wix-ads"]{
     display:none !important;
     visibility:hidden !important;
-    opacity:0 !important;
     height:0 !important;
     min-height:0 !important;
+    opacity:0 !important;
     overflow:hidden !important;
 }
 
-body, #site-root, #SITE_CONTAINER{
+/* Quitar espacio blanco superior */
+body{
     margin-top:0 !important;
     padding-top:0 !important;
-    top:0 !important;
 }
 
-:root{
-    --wix-ads-height:0px !important;
+#SITE_CONTAINER,
+#site-root{
+    top:0 !important;
+    margin-top:0 !important;
+    padding-top:0 !important;
 }
 </style>
 
